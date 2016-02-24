@@ -1,7 +1,7 @@
 Role Name
 =========
 
-Ansible Galaxy role for insalling memcached
+Ansible Galaxy role for insalling memcache
 
 Role Variables
 --------------

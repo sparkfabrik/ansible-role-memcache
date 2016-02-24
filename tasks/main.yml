@@ -1,0 +1,11 @@
+---
+# tasks file for sparkfabrik.memcache
+- name: Install memecached
+  apt: pkg=memcached
+  notify:
+    - restart memcached
+
+- name: Install config file
+  template: src=etc--memcached.conf.j2 dest=/etc/memcached.conf
+  notify:
+    - retart memcached
